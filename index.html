@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css"/>
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	
+	<title>Lab5</title>
+</head>
+<body>
+ <div id="slider-wrap">
+    <div id="active-slide">
+        <div id="slider">
+            <div class="slide"><img src="../images/nature1.jpg"></div>
+            <div class="slide"><img src="../images/nature2.jpg"></div>
+            <div class="slide"><img src="../images/nature3.jpg"></div>
+        </div>
+    </div>
+</div>
+
+<div class="task2Block">
+ <input id="tab1" type="radio" name="tabs" checked />
+ <label for="tab1" title="Вкладка 1">Вкладка 1</label>
+
+ <input id="tab2" type="radio" name="tabs" />
+ <label for="tab2" title="Вкладка 2">Вкладка 2</label>
+
+ <input id="tab3" type="radio" name="tabs" />
+ <label for="tab3" title="Вкладка 3">Вкладка 3</label>
+
+ <section id="content1">
+   <p>
+	 Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nemo
+	 accusantium, mollitia, blanditiis vitae impedit perspiciatis laborum
+	 ab quo incidunt harum at veniam deleniti dolorem nulla, voluptates
+	 debitis consequatur nihil?
+   </p>
+   <img src="../images/nature1.jpg" />
+ </section>
+ <section id="content2">
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+   <img src="../images/nature2.jpg" />
+ </section>
+ <section id="content3">
+   <p>
+	 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+	 magnam ab, ipsa, omnis enim possimus cumque nulla ut maiores, dolores
+	 animi odit! Voluptatum beatae repudiandae, molestias dolore accusamus
+	 nihil laboriosam!
+   </p>
+   <img src="../images/nature3.jpg" />
+ </section>
+</div>
+
+<div class="task3Block">
+<p>
+ <label for="amount">Диапазон значений:</label>
+ <input
+   type="text"
+   id="amount"
+   readonly
+   style="border: 0; color: #1f5e0f; font-weight: bold"
+ />
+</p>
+<div id="slider-range"></div>
+</div>
+
+<div class="task4Block">
+<div class="imageTask4"><a href="#"><img src="../images/nature3.jpg" /></a></div>
+</div>
+
+<div class="task5Block">
+<a href="#" class="js-open-modal" data-modal="1">Перетаскиваемое окно</a>
+<div class="modal" data-modal="1">
+	<div class="ui-widget-content" id="draggable">
+		<div class="header_modal">
+			<p class="modal__title">Заголовок окна</p>
+			<svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>			
+		</div>
+		<div class="content_modal">
+			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis ducimus harum sit, earum consectetur quos, est debitis asperiores veritatis quas eum, iusto neque? Quo ea repellendus vero quaerat adipisci dolore.</p>
+		</div>
+	</div>
+</div>
+<div class="overlay js-overlay-modal"></div>
+</div>
+
+<div class="task6Block">
+<form class="contact_form" action="#" method="post" name="contact_form">
+    <ul>   
+		<li>
+			<h2>Форма Авторизации</h2>			
+	   </li>   
+        <li>
+            <input type="email" name="email" placeholder="EmailName@mail.ru" required />
+            <span class="form_hint">Например "User@mail.ru"</span>
+        </li>
+        <li>
+            <input type="password" name="password" placeholder="Password" required pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{7,}$"/>
+            <span class="form_hint">Минимум 7 символов(цифра, разные регистры)"</span>
+        </li>
+        <li>
+            <button class="submit" type="submit">Отправить</button>
+        </li>
+    </ul>
+</form>
+</div>
+
+<div class="task7Block">
+<nav>
+	<div class="wrapper">
+		<div class="menuToggle icon">
+			<div class="hamburger"></div>
+		</div>	
+		<ul class="menu">
+			<li><a href="#">Главная</a></li>
+			<li><a href="#">Страница1</a></li>
+			<li><a href="#">Страница2</a></li>
+			<li><a href="#">О нас</a></li>
+		</ul>
+	</div>
+</nav>
+<section>
+	<div class="wrapper">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti facere quia tempore aliquid, modi numquam voluptates quibusdam odit cum magni, distinctio sit inventore nisi cupiditate quidem ducimus dolores voluptate consectetur.
+	</div>
+</section>
+</div>
+
+<div class="task8Block">
+<ul id="menu">	
+	<li><span>Пункт меню 1</span>
+	   <ul>
+		<li><a href="">подпункт 1</a></li>
+		<li><a href="">подпункт 2</a></li>
+		<li><a href="">подпункт 3</a></li>
+		<li><a href="">подпункт 4</a></li>
+		<li><a href="">подпункт 5</a></li>
+	   </ul>
+	</li>
+	<li><span>Пункт меню 2</span>
+	   <ul>
+		   <li><a href="">подпункт 1</a></li>
+		   <li><a href="">подпункт 2</a></li>
+		   <li><a href="">подпункт 3</a></li>
+		   <li><a href="">подпункт 4</a></li>
+		   <li><a href="">подпункт 5</a></li>
+	   </ul>
+	</li>
+	 <li><span>Пункт меню 3</span>
+	   <ul>
+		   <li><a href="">подпункт 1</a></li>
+		   <li><a href="">подпункт 2</a></li>
+		   <li><a href="">подпункт 3</a></li>
+	   </ul>
+	</li>
+</ul>
+</div>
+</body>
+<script src="/main.js"></script>
+</html>
